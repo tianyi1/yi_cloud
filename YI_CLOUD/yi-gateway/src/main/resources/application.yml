@@ -1,0 +1,25 @@
+server:
+  port: 9999
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      routes:
+        - id: one_server
+          uri: http://localhost:7777
+          predicates:
+            - Path=/one/**
+        - id: two_server
+          uri: http://localhost:8888
+          predicates:
+            - Path=/two/**
+    loadbalancer:
+      ribbon:
+        enabled: false

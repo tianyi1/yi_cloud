@@ -22,7 +22,8 @@
         <module>yi-lcn</module>
         <module>yi-eureka</module>
         <module>yi-service-one</module>
-        <module>yi-service-tow</module>
+        <module>yi-service-two</module>
+        <module>yi-gateway</module>
     </modules>
 
     <properties>

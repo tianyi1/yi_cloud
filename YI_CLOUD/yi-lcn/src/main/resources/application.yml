@@ -1,0 +1,43 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka/
+server:
+    port: 7970
+spring:
+    application:
+        name: TransactionManager-server
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: 123456
+        url: jdbc:mysql://localhost:3306/tx-manager?characterEncoding=UTF-8
+        username: root
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        hibernate:
+            ddl-auto: create
+    redis:
+        host: 127.0.0.1
+        password: Maywide123
+        port: 6379
+tx-lcn:
+    logger:
+        driver-class-name: ${spring.datasource.driver-class-name}
+        enabled: true
+        jdbc-url: ${spring.datasource.url}
+        password: ${spring.datasource.password}
+        username: ${spring.datasource.username}
+    manager:
+        admin-key: 123456
+        concurrent-level: 160
+        dtx-lock-time: ${tx-lcn.manager.dtx-time}
+        dtx-time: 8000
+        ex-url: /provider/email-to/***@**.com
+        ex-url-enabled: false
+        heart-time: 300000
+        host: 127.0.0.1
+        port: 8070
+        seq-len: 12
+    message:
+        netty:
+            attr-delay-time: ${tx-lcn.manager.dtx-time}

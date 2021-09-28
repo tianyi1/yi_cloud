@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: lcn-service-one
+    name: on-service
   datasource:
       url: jdbc:mysql://localhost:3306/service-one?useUnicode=true&characterEncoding=utf-8
       username: root
