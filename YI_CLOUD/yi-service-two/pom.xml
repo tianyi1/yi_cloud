@@ -55,6 +55,18 @@
             <artifactId>spring-tx</artifactId>
             <version>5.1.3.RELEASE</version>
         </dependency>
+        <!--        消除模板代码-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+        <!--mybits-plus依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>

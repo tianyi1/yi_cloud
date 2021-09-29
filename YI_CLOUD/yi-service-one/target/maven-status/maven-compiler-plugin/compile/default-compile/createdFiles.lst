@@ -1,7 +1,8 @@
-com\yi\service\logic\UserController.class
-com\yi\service\logic\UserService.class
-com\yi\service\logic\UserMapper.class
-com\yi\service\logic\OrderVo.class
-com\yi\service\logic\UserVo.class
-com\yi\service\logic\OrderService.class
+com\yi\service\logic\controller\UserController.class
+com\yi\service\logic\entity\UserVo.class
+com\yi\service\logic\mapper\UserMapper.class
+com\yi\service\logic\entity\OrderVo.class
+com\yi\service\logic\service\UserService.class
+com\yi\service\logic\service\impl\UserServiceImpl.class
+com\yi\service\logic\service\OrderService.class
 com\yi\service\ServiceOne.class
