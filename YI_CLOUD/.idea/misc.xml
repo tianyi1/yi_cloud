@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/yi-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/yi-hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/yi-hystrix-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-server-config/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-server-config-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

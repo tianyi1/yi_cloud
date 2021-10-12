@@ -33,6 +33,10 @@
         <module>yi-hystrix-dashboard</module>
 <!--        断熔降级聚会仪表盘监控-->
         <module>yi-hystrix-turbine</module>
+<!--        配置中心服务-->
+        <module>yi-server-config</module>
+        <!--        配置中心客服端使用-->
+        <module>yi-server-config-client</module>
     </modules>
 
     <properties>

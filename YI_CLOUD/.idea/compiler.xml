@@ -9,7 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="yi-gateway" />
         <module name="yi-hystrix-turbine" />
+        <module name="yi-server-config" />
         <module name="yi-lcn" />
+        <module name="yi-server-config-client" />
         <module name="yi-service-one" />
         <module name="yi-eureka" />
         <module name="yi-service-two" />
@@ -27,6 +29,8 @@
       <module name="yi-hystrix-dashboard" options="-parameters" />
       <module name="yi-hystrix-turbine" options="-parameters" />
       <module name="yi-lcn" options="-parameters" />
+      <module name="yi-server-config" options="-parameters" />
+      <module name="yi-server-config-client" options="-parameters" />
       <module name="yi-service-one" options="-parameters" />
       <module name="yi-service-two" options="-parameters" />
     </option>

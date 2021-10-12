@@ -6,6 +6,7 @@ import com.yi.service.logic.service.UserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -31,6 +32,7 @@ public class UserController {
     @ApiResponses({ @ApiResponse(code = 200, message = "OK", response = UserVo.class) })
     @RequestMapping(value = "/one-service/queryUser", method = RequestMethod.POST, consumes = "application/json")
     public String queryUser(@RequestBody UserVo userVo) {
+        System.out.println("222222222");
         return userService.queryUser(userVo);
     }
 }

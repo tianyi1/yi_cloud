@@ -1,0 +1,12 @@
+spring:
+  application:
+    # 对应config server所获取的配置文件的 {application} git上的配置文件
+    name: config-single-client
+  cloud:
+    config:
+      # 指 config server 地址
+      uri: http://localhost:3301/
+      # 指定 config server 里的 {profile}
+      profile: prod
+      # 指定Git仓库分支，对应config server的{label}
+      label: master
