@@ -4,5 +4,6 @@ com\yi\service\logic\mapper\UserMapper.class
 com\yi\service\logic\entity\OrderVo.class
 com\yi\service\logic\service\UserService.class
 com\yi\service\logic\service\impl\UserServiceImpl.class
+com\yi\service\logic\fallback\ProductClientFallBack.class
 com\yi\service\logic\service\OrderService.class
 com\yi\service\ServiceOne.class

@@ -8,4 +8,6 @@ import org.springframework.stereotype.Service;
 public interface UserService {
 
     String saveUser(UserVo userVo);
+
+    String queryUser(UserVo userVo);
 }

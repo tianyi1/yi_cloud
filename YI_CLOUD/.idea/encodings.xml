@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/yi-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yi-eureka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yi-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yi-hystrix-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yi-hystrix-turbine/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yi-lcn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yi-lcn/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yi-lcn/src/main/resources" charset="UTF-8" />

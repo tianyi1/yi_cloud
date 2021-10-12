@@ -19,11 +19,20 @@
 
     <!--包含的模块-->
     <modules>
+<!--        lcn分布式事务控制-->
         <module>yi-lcn</module>
+<!--        服务注册中心-->
         <module>yi-eureka</module>
+<!--        应用服务1-->
         <module>yi-service-one</module>
+<!--        应用服务2-->
         <module>yi-service-two</module>
+<!--        网关服务-->
         <module>yi-gateway</module>
+<!--        断熔降级仪表盘监控-->
+        <module>yi-hystrix-dashboard</module>
+<!--        断熔降级聚会仪表盘监控-->
+        <module>yi-hystrix-turbine</module>
     </modules>
 
     <properties>
@@ -43,6 +52,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.23</version>
+        </dependency>
+<!--        添加actuator 依赖 观察数据-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 

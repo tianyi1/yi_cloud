@@ -1,0 +1,12 @@
+server:
+  port: 6060
+
+spring:
+  application:
+    name: hystrix-dashboard-server
+
+#eureka 配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

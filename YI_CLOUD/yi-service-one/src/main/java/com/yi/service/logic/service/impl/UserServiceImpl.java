@@ -39,4 +39,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserVo> implements 
 //        double x=10/0;
         return "ok-B" + " > " + "ok-A";
     }
+
+    @Override
+    public String queryUser(UserVo userVo) {
+        OrderVo order=new OrderVo();
+        order.setId(userVo.getId());
+        order.setUser_name(userVo.getUser_name());
+        String s = orderService.queryOrder(order);
+        System.out.println(s);
+        return s;
+    }
 }

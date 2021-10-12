@@ -1,0 +1,23 @@
+
+server:
+  port: 6020
+
+spring:
+  application:
+    name: hystrix-turbine-server
+
+#eureka 配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+turbine:
+  # 这里是配置 需要聚合的服务名字，然后多个的话 就用逗号隔开,   我们这里是配置的用户服务
+  app-config: two-service
+  # 这里是集群默认名字
+  cluster-name-expression: "'default'"

@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/lcn-service-tow/pom.xml" />
         <option value="$PROJECT_DIR$/yi-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-hystrix-turbine/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

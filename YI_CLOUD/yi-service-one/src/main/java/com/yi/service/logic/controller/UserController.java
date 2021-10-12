@@ -26,4 +26,11 @@ public class UserController {
 //        return null;
         return userService.saveUser(userVo);
     }
+
+    @ApiOperation(value = "新增用户")
+    @ApiResponses({ @ApiResponse(code = 200, message = "OK", response = UserVo.class) })
+    @RequestMapping(value = "/one-service/queryUser", method = RequestMethod.POST, consumes = "application/json")
+    public String queryUser(@RequestBody UserVo userVo) {
+        return userService.queryUser(userVo);
+    }
 }

@@ -2,15 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="yi-gateway" />
-        <module name="yi-service-one" />
+        <module name="yi-hystrix-turbine" />
         <module name="yi-lcn" />
+        <module name="yi-service-one" />
         <module name="yi-eureka" />
         <module name="yi-service-two" />
+        <module name="yi-hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +24,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="yi-eureka" options="-parameters" />
       <module name="yi-gateway" options="-parameters" />
+      <module name="yi-hystrix-dashboard" options="-parameters" />
+      <module name="yi-hystrix-turbine" options="-parameters" />
       <module name="yi-lcn" options="-parameters" />
       <module name="yi-service-one" options="-parameters" />
       <module name="yi-service-two" options="-parameters" />

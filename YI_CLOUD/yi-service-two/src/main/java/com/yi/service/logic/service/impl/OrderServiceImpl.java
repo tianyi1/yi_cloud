@@ -19,4 +19,11 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, OrderVo> implemen
          this.save(value);
         return "ok-B";
     }
+
+    @Override
+    public String queryOrder(OrderVo value) {
+        System.out.println(value.getUser_name());
+        return value.getUser_name();
+    }
+
 }
