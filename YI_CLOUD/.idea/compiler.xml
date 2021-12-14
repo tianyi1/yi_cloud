@@ -7,34 +7,57 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yi-gateway" />
-        <module name="yi-hystrix-turbine" />
         <module name="yi-server-config" />
         <module name="yi-lcn" />
         <module name="yi-server-config-client" />
+        <module name="yi-springcloudstream-consumer" />
+        <module name="yi-sa-test" />
+        <module name="yi-server-sso-client" />
+        <module name="yi-gateway" />
+        <module name="yi-hystrix-turbine" />
         <module name="yi-server-security" />
+        <module name="yi-sa-token" />
+        <module name="yi-springcloudstream-producer" />
         <module name="yi-service-one" />
         <module name="yi-eureka" />
+        <module name="yi-graphql-demo" />
         <module name="yi-service-two" />
         <module name="yi-hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lcn-service1" target="1.8" />
+      <module name="sa-token-demo-springboot" target="1.8" />
+      <module name="yi-forest" target="1.8" />
+      <module name="yi-graphql" target="1.8" />
+      <module name="yi-sa-test" target="1.8" />
+      <module name="yi-sa-token-springboot" target="1.8" />
+      <module name="yi-server-graphql" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sa-token-demo-springboot" options="-parameters" />
       <module name="yi-eureka" options="-parameters" />
+      <module name="yi-forest" options="-parameters" />
       <module name="yi-gateway" options="-parameters" />
+      <module name="yi-graphql" options="-parameters" />
+      <module name="yi-graphql-demo" options="-parameters" />
       <module name="yi-hystrix-dashboard" options="-parameters" />
       <module name="yi-hystrix-turbine" options="-parameters" />
       <module name="yi-lcn" options="-parameters" />
+      <module name="yi-sa-test" options="-parameters" />
+      <module name="yi-sa-token" options="-parameters" />
+      <module name="yi-sa-token-springboot" options="-parameters" />
       <module name="yi-server-config" options="-parameters" />
       <module name="yi-server-config-client" options="-parameters" />
+      <module name="yi-server-graphql" options="-parameters" />
       <module name="yi-server-security" options="-parameters" />
+      <module name="yi-server-sso-client" options="-parameters" />
       <module name="yi-service-one" options="-parameters" />
       <module name="yi-service-two" options="-parameters" />
+      <module name="yi-springcloudstream-consumer" options="-parameters" />
+      <module name="yi-springcloudstream-producer" options="-parameters" />
     </option>
   </component>
 </project>

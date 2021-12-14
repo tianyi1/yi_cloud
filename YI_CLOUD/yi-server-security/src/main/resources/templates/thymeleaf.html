@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div sec:authorize="isAuthenticated()">
+    <h2>
+        <span sec:authentication="name"></span>,您好 您的身份是
+        <span sec:authentication="principal.authorities"></span>
+    </h2>
+</div>
+<div sec:authorize="hasRole('abc')">
+    <h3>我的VIP角色</h3>
+</div>
+</body>
+</html>

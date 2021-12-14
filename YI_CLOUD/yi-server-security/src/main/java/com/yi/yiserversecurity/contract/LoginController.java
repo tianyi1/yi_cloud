@@ -11,7 +11,6 @@ public class LoginController {
     @Secured("ROLE_abc")
     @RequestMapping("/toMain")
     public String toMain(){
-        System.out.println("进来了吗？");
         return "redirect:main.html";
     }
 
@@ -21,9 +20,8 @@ public class LoginController {
     }
 
     @RequestMapping("/demo")
-    @ResponseBody
     public String demo(){
-        return "demo";
+        return "thymeleaf";
     }
 
 }

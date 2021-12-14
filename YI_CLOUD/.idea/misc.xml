@@ -12,11 +12,17 @@
         <option value="$PROJECT_DIR$/yi-server-config/pom.xml" />
         <option value="$PROJECT_DIR$/yi-server-config-client/pom.xml" />
         <option value="$PROJECT_DIR$/yi-server-security/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-server-sso-client/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-sa-token/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-graphql-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-springcloudstream-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-springcloudstream-consumer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/lcn-service1/pom.xml" />
+        <option value="$PROJECT_DIR$/yi-forest/pom.xml" />
       </set>
     </option>
   </component>

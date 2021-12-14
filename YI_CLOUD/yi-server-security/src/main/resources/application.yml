@@ -1,7 +1,7 @@
 server:
   port: 3305
-  servlet:
-    path: "/xxxx"
+#  servlet:
+#    path: "/xxxx"
 
 spring:
   datasource:
@@ -9,6 +9,15 @@ spring:
     url: jdbc:mysql://localhost:3306/security?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
-  mvc:
-    pathmatch:
-      use-suffix-pattern: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+  redis:
+    host: 127.0.0.1
+    password: Maywide123
+    port: 6379
+#  mvc:
+#    pathmatch:
+#      use-suffix-pattern: true

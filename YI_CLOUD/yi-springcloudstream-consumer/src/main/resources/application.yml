@@ -1,0 +1,35 @@
+server:
+    port: 3312
+    servlet:
+        context-path: /consumer
+spring:
+    application:
+        name: consumer
+    cloud:
+        stream:
+            binders:
+                rabbit_cluster:
+                    environment:
+                        spring:
+                            rabbitmq:
+                                addresses: 127.0.0.1:5672
+                                password: guest
+                                username: guest
+                                virtual-host: /
+                    type: rabbit
+            bindings:
+                input_channel:
+                    binder: rabbit_cluster
+                    consumer:
+                        concurrency: 1
+                    destination: exchange-3
+                    group: queue-3
+            rabbit:
+                bindings:
+                    input_channel:
+                        consumer:
+                            acknowledge-mode: MANUAL
+                            durable-subscription: true
+                            max-concurrency: 5
+                            recovery-interval: 3000
+                            requeue-rejected: false

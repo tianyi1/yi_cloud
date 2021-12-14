@@ -39,6 +39,16 @@
         <module>yi-server-config-client</module>
         <!--  任务服务中心-->
         <module>yi-server-security</module>
+        <!--  单点登录客户端 -->
+        <module>yi-server-sso-client</module>
+        <!--  一个轻量级 Java 权限认证框架 -->
+        <module>yi-sa-token</module>
+        <!--  是一种API查询语言 -->
+        <module>yi-graphql-demo</module>
+        <!--  消息中间生产者 -->
+        <module>yi-springcloudstream-producer</module>
+        <!--  消息中间消费者 -->
+        <module>yi-springcloudstream-consumer</module>
     </modules>
 
     <properties>
